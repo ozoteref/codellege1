@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+        <input type="text"><br><br> <!-- input de tipo texto -->
+        <input type="password"><br><br> <!-- input de tipo contraseña -->
+        <input type="email"><br><br> <!-- input de tipo email -->
+        <input type="date"><br><br> <!-- input de tipo fecha dia/mes/año -->
+        <input type="month"><br><br> <!-- input de tipo fecha mes/año -->
+        <input type="week"><br><br> <!-- input de tipo fecha semana dia/año -->
+        <input type="number"><br><br> <!-- input de tipo numerico -->
+        
+        <input type="color"><br><br> <!-- input de tipo color -->
+        <input type="range"><br><br> <!-- input de tipo rango -->
+
+        <!-- input de tipo radio button -->
+        <input type="radio" name="genero" value="F"> 
+        <input type="radio" name="genero" value="M">
+        <input type="radio" name="genero" value="I"><br><br>
+
+        <!-- input de tipo seleccion multiple -->
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox"><br><br>
+
+        <input type="reset"> <!-- Input de tipo boton de restablecer -->
+        <input type="submit"><br><br> <!-- Input de tipo boton enviar -->
+        
+        <button>Enviar</button><br><br> <!-- Etiqueta de boton -->
+        <textarea></textarea><br><br> <!-- Etiqueta de area de texto -->
+
+        <!-- Lista desplegable -->
+        <select>
+            <option>HTML5</option>
+            <option>CSS3</option>
+            <option>JavaScript</option>
+        </select><br><br>
+
+        <select>
+            <optgroup label="Lenguajes">
+                <option>PHP</option>
+                <option>Java</option>
+                <option>C#</option>
+            </optgroup>
+
+            <optgroup label="Base de datos"> <!-- Agrega un titulo a la lista no como una opcion -->
+                <option>MySQL</option>
+                <option>ORACLE</option>
+                <option>SQL Server</option>
+            </optgroup>
+        </select><br><br>
+
+        <!-- Otra forma de crear listas desplegables pero con input -->
+        <input list="Etiquetas">
+            <datalist id="Etiquetas">
+                <option value="Texto">
+                <option value="Tablas">
+            </datalist><br><br>
+        
+        <input type="file"><br><br> <!-- Input para seleccionar un archivo de tu pc -->
+
+        <progress></progress> <!-- Barra de progreso -->
+
+    </form>
+</body>
+</html>
