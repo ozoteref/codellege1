@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Creación de tabla</title>
+
+    <script language="javascript">
+        var i = 0;
+        var j = 0;
+        var filas = 0;
+        var columnas = 0;
+    
+        function func() {
+            //devuelve el elemento que tiene el ID con el valor especificado y se convierte de string a entero
+            //la propiedad value contiene el valor que escribe el usuario
+            filas = parseInt(document.getElementById("f").value); 
+            columnas = parseInt(document.getElementById("c").value);
+    
+            document.write("<table border=1>");
+    
+            for (i = 0; i < filas; i++) {
+    
+                document.write("<tr>");
+    
+                for (j = 1; j < columnas+1; j++) {
+                    document.write("<td>columna " + j + "</td>");
+                }
+                document.write("</tr>");
+            }
+            document.write("</table>");
+        }
+    
+    </script>
+</head>
+
+<body>
+
+    <p>Filas:
+        <input type="text" name="f" id="f" />
+    </p>
+    <p>Columnas:
+        <input type="text" name="c" id="c" />
+    </p>
+    <p>
+        <input type="button" name="boton" id="boton" value="Submit" onclick="func();" />
+    </p>
+
+</body>
+
+</html>
